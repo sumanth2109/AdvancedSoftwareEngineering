@@ -1,0 +1,50 @@
+<title>CS5551 Lab Assignment - 2 </title>
+<body>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<div data-role="page" id="HomePage">
+    <div data-role="header">
+         <a data-rel="back" data-icon="home">Home</a>
+         <h1> CS5551 Lab Assignment - 2</h1>
+    </div>
+        
+    <div data-role="content">
+        <p><a href="#MapsPage" data-role="button"> Directions to Great Smoky Mountains</a>
+        </p> <a href="#WeatherPage" data-role="button"> Weather at Smoky Mountains</a>
+    </div>
+    <div>
+    <h1 onclick = "clearStorage()"> Clear Storage</h1>
+    <h1 onclick = "saveStatusLocally()"> Store Message</h1>
+    <h1 onlick = " readStatus()"> Display Message</h1>
+    <div id="write"></div>
+    </div>
+ <marquee>
+     <img src="http://farm5.staticflickr.com/4006/4194268276_9845ca81b9_z.jpg">
+     <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQpPqyQTQ53HoLi5NYFNEWdWJpx9pJAdRQr4BbqBbGbMBcHdXbtUQ">
+     <img src="http://www.womenontheirway.com/assets/wyndham-wisdom/Winter_Scene.jpg">
+     </marquee>
+         </div>
+         
+ <div data-role="page" id="MapsPage">
+    <div data-role="header">
+         <a data-rel="back" data-icon="home">Home</a>
+         <h1> Directions</h1>
+    </div>
+    <div data-role="content" id="map_canvas"></div>
+</div>
+
+         
+<div data-role="page" id="WeatherPage">
+    <div data-role="header">
+         <a data-rel="back" data-icon="home">Home</a>
+         <h1> Weather at Smoky Mountains </h1>
+    </div>
+    <h1 onclick="clearStorage2()">clear storage</h1>
+<h1 onclick="readStatus2()">print</h1>
+<div id="write2"></div>
+     
+    <div data-role="content" id="weatherModule">
+        <p id="currentConditions"></p>
+        <div id="currentIcon"></div>
+    </div>
+    </body>
+</div>
