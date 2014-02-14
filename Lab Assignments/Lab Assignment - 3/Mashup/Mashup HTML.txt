@@ -1,0 +1,27 @@
+<title> ASE Mashup Application for Lab Assignment 3</title>
+<h1>Mashup Application</h1>
+
+<p align = "center">Compare UMKC Departments and students using Google charts</p>
+
+<img src="//chart.googleapis.com/chart?chs=250x100&chco=7777CC|
+76A4FB&chd=t:40,30,20,10,5&cht=p3&chl=Arts|IS|Bloch|SCE|Others" width="500" height="500" 
+alt="" />
+
+
+<marquee direction="right">
+    <img src="https://chart.googleapis.com/chart?cht=bhs&chco=4D89F9,C6D9FD&chd=t:300,200,100,150&chs=250x100&chl=India|China|Arab|USA">
+    <img src="https://chart.googleapis.com/chart?chs=250x100&chd=t:50,30,20&cht=p3&chl=Graduate|UG|Ph.D">
+    </marquee>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<a href="https://twitter.com/SumanthKoushik" class="twitter-share-button" data-lang="en">Tweet</a>
+        
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="http://facebook.com/sumanthkoushik.kalli" data-width="450" data-show-faces="true" data-send="true"></div>
