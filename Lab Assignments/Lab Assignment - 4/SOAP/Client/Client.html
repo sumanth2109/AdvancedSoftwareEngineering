@@ -15,13 +15,13 @@
 		<div page-role="content">
 		<p>Enter a Character</p>
 		<input type="text" id="input1" name="string" length="1">
-		<button onclick="getstring()">Submit</button>
+		<button onclick="submit()">Submit</button>
 		<br></br>
 		<div id="write" align="center"></div>
 		</div>
 </div>
 <script>
-function getstring()
+function submit()
 {
 		var str=document.getElementById("AsciiValue").value;
 		var url="http://localhost:49305/WebSite4/WebService.asmx/AscciValue"
