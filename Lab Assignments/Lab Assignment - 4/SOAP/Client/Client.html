@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="soapclient.js"></script>
+<head>
+</head>
+<body>
+<div page-role="page">
+  <div page-role="header" data-theme="b">
+    <h1 align="center">Lab Assignment - 4</h1>
+	<h2 align="center">SOAP Application Client<h2>
+  </div>
+		<div page-role="content">
+		<p>Enter a Character</p>
+		<input type="text" id="input1" name="string" length="1">
+		<button onclick="getstring()">Submit</button>
+		<br></br>
+		<div id="write" align="center"></div>
+		</div>
+</div>
+<script>
+function getstring()
+{
+		var str=document.getElementById("AsciiValue").value;
+		var url="http://localhost:49305/WebSite4/WebService.asmx/AscciValue"
+		var pl = new SOAPClientParameters();
+		pl.add("Ascii",str);
+		SOAPClient.invoke(url, "AsciiValue", pl, true,callBack);
+}
+</script>
+<script>
+function callBack(r)
+	{
+        alert(r);
+		document.getElementById("write").innerHTML=r;
+	}
+</script>
+
+</body>
+</html>
